@@ -1,16 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function Ticket(props) {
   return (
     <div>
-      <hr />
-      {masterTicketList.map((ticket, index) =>
-        <Ticket names={ticket.names}
-          location={ticket.location}
-          issue={ticket.issue}
-          key={index} />
-      )}
+      <style global jsx>{`
+            div {
+              background-color: salmon;
+            }
+          `}</style>
+      <h3>{props.location} - {props.names}</h3>
+      <p><em>{props.issue}</em></p>
+      <hr/>
     </div>
   );
 }
