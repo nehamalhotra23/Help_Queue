@@ -5,9 +5,12 @@ import { Switch, Route } from 'react-router-dom';
 import NewTicketForm from './NewTicketForm';
 import Image from './Image';
 
+const backgroundStyling = {
+  backgroundColor: '##b0d14b'
+};
 function App() {
   return (
-    <div>
+    <div style={backgroundStyling}>
       <Header/>
       <Image/>
       <Switch>
