@@ -7,13 +7,13 @@ function TicketList(props) {
   console.log(props.ticketList);
   return (
     <div>
-      <hr/>
+      <hr />
       {props.ticketList.map((ticket) =>
         <Ticket names={ticket.names}
           location={ticket.location}
-          issue={ticket.issue} 
-          key={ticket.id}/>
-      )} 
+          issue={ticket.issue}
+          key={ticket.id} />
+      )}
     </div>
   );
 }
