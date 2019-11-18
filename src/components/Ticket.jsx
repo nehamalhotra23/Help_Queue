@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TicketStyles = {
+// const TicketStyles = {
 
-};
+// };
 
 const TicketBody = {
   color: '#b0d14b'
@@ -13,12 +13,7 @@ function Ticket(props) {
     <div style = {TicketBody}>
       <h3>{props.location} - {props.names}</h3>
       <p><em>{props.issue}</em></p>
-      <hr className='lineBreakStyles'/>
-      <style jsx>{`
-        .lineBreakStyles {
-          color: #b0d14b;
-        }
-      `}</style>
+      <hr/>
     </div>
   );
 }
